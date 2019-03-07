@@ -31,9 +31,9 @@ echo "######################"
 echo "# Setting root pass #"
 echo "#####################"
 virt-customize -a $image --root-password password:redhat --uninstall cloud-init
-echo "########################"
-echo "# Unsubscribing system #"
-echo "########################"
+#echo "########################"
+#echo "# Unsubscribing system #" The Tower install requires a sub, this is just here for example on building other appliances
+#echo "########################"
 #virt-customize -a $image --run-command 'subscription-manager remove --all' --run-command 'subscription-manager unregister'
 echo "#######################"
 echo "# Copy to destination #"
